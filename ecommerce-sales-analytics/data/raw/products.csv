@@ -1,0 +1,301 @@
+product_id,product_name,category,unit_price,unit_cost
+P0001,Vista Speaker 489,Electronics,444.99,358.57
+P0002,Zenith Tablet 977,Electronics,53.99,43.26
+P0003,Terra Headphones 854,Electronics,461.99,383.13
+P0004,Orbit Monitor 678,Electronics,715.99,570.47
+P0005,Orbit Smartwatch 182,Electronics,158.99,135.36
+P0006,Terra Smartwatch 667,Electronics,525.99,421.54
+P0007,Nova Webcam 500,Electronics,120.99,96.79
+P0008,Pulse Speaker 519,Electronics,72.99,62.25
+P0009,Vista Monitor 929,Electronics,64.99,51.1
+P0010,Vista Webcam 433,Electronics,109.99,90.43
+P0011,Orbit Headphones 717,Electronics,71.99,60.45
+P0012,Orbit Webcam 492,Electronics,321.99,256.32
+P0013,Nova Smartwatch 790,Electronics,353.99,282.5
+P0014,Zenith Webcam 359,Electronics,133.99,108.11
+P0015,Zenith Smartwatch 823,Electronics,61.99,49.55
+P0016,Nova Speaker 733,Electronics,316.99,253.52
+P0017,Terra Tablet 133,Electronics,166.99,141.57
+P0018,Apex Tablet 523,Electronics,320.99,261.7
+P0019,Terra Tablet 608,Electronics,432.99,353.21
+P0020,Terra Tablet 127,Electronics,102.99,84.92
+P0021,Luma Speaker 992,Electronics,77.99,65.45
+P0022,Zenith Webcam 352,Electronics,47.99,40.06
+P0023,Apex Tablet 554,Electronics,313.99,253.76
+P0024,Zenith Speaker 831,Electronics,141.99,119.84
+P0025,Nova Headphones 793,Electronics,42.99,35.37
+P0026,Vista Webcam 550,Electronics,65.99,55.76
+P0027,Orbit Speaker 249,Electronics,349.99,291.99
+P0028,Orbit Tablet 425,Electronics,284.99,242.15
+P0029,Luma Webcam 429,Electronics,57.99,46.72
+P0030,Pulse Monitor 971,Electronics,91.99,73.59
+P0031,Zenith Speaker 762,Electronics,372.99,316.69
+P0032,Luma Headphones 509,Electronics,664.99,559.54
+P0033,Zenith Tablet 591,Electronics,103.99,82.6
+P0034,Apex Speaker 746,Electronics,423.99,349.74
+P0035,Apex Tablet 185,Electronics,281.99,239.67
+P0036,Vista Monitor 137,Electronics,145.99,119.77
+P0037,Vista Headphones 709,Electronics,111.99,91.13
+P0038,Nova Smartwatch 931,Electronics,67.99,55.35
+P0039,Terra Tablet 364,Electronics,117.99,92.86
+P0040,Nova Speaker 803,Electronics,179.99,153.0
+P0041,Vista Speaker 496,Electronics,181.99,148.29
+P0042,Pulse Monitor 340,Electronics,174.99,145.61
+P0043,Zenith Speaker 355,Electronics,201.99,160.89
+P0044,Nova Tablet 226,Electronics,650.99,531.28
+P0045,Vista Monitor 206,Electronics,55.99,45.27
+P0046,Luma Webcam 791,Electronics,384.99,326.56
+P0047,Pulse Smartwatch 312,Electronics,692.99,565.51
+P0048,Nova Smartwatch 845,Electronics,126.99,101.31
+P0049,Apex Webcam 670,Electronics,106.99,87.62
+P0050,Luma Webcam 941,Electronics,88.99,75.12
+P0051,Luma Speaker 971,Electronics,45.99,36.41
+P0052,Pulse Webcam 900,Electronics,410.99,325.37
+P0053,Orbit Smartwatch 119,Electronics,200.99,162.47
+P0054,Zenith Webcam 184,Electronics,127.99,102.68
+P0055,Nova Bedding 952,Home & Kitchen,30.99,21.78
+P0056,Apex Bedding 237,Home & Kitchen,154.99,107.7
+P0057,Vista Bedding 140,Home & Kitchen,80.99,54.79
+P0058,Apex Cookware Set 973,Home & Kitchen,133.99,87.08
+P0059,Pulse Blender 256,Home & Kitchen,21.99,15.43
+P0060,Apex Bedding 209,Home & Kitchen,100.99,65.55
+P0061,Zenith Coffee Maker 474,Home & Kitchen,105.99,64.38
+P0062,Apex Blender 764,Home & Kitchen,111.99,78.58
+P0063,Terra Bedding 172,Home & Kitchen,20.99,14.23
+P0064,Orbit Coffee Maker 695,Home & Kitchen,58.99,34.58
+P0065,Pulse Bedding 548,Home & Kitchen,33.99,21.83
+P0066,Nova Bedding 195,Home & Kitchen,88.99,62.32
+P0067,Nova Bedding 249,Home & Kitchen,48.99,28.87
+P0068,Terra Lamp 520,Home & Kitchen,143.99,87.85
+P0069,Vista Blender 358,Home & Kitchen,15.99,9.73
+P0070,Zenith Lamp 577,Home & Kitchen,28.99,18.41
+P0071,Zenith Coffee Maker 360,Home & Kitchen,171.99,114.82
+P0072,Orbit Blender 686,Home & Kitchen,49.99,29.92
+P0073,Terra Cookware Set 341,Home & Kitchen,53.99,33.23
+P0074,Apex Bedding 194,Home & Kitchen,148.99,105.88
+P0075,Luma Blender 272,Home & Kitchen,79.99,54.12
+P0076,Zenith Bedding 927,Home & Kitchen,21.99,15.32
+P0077,Terra Blender 509,Home & Kitchen,32.99,23.66
+P0078,Nova Cookware Set 257,Home & Kitchen,17.99,12.82
+P0079,Terra Knife Set 821,Home & Kitchen,78.99,53.36
+P0080,Orbit Knife Set 886,Home & Kitchen,61.99,37.25
+P0081,Orbit Cookware Set 899,Home & Kitchen,16.99,11.64
+P0082,Apex Bedding 474,Home & Kitchen,74.99,53.48
+P0083,Pulse Coffee Maker 903,Home & Kitchen,42.99,25.94
+P0084,Nova Lamp 931,Home & Kitchen,16.99,12.0
+P0085,Zenith Bedding 315,Home & Kitchen,160.99,97.84
+P0086,Pulse Coffee Maker 677,Home & Kitchen,133.99,81.86
+P0087,Zenith Coffee Maker 390,Home & Kitchen,21.99,13.19
+P0088,Terra Knife Set 446,Home & Kitchen,54.99,34.67
+P0089,Nova Blender 489,Home & Kitchen,31.99,21.17
+P0090,Orbit Lamp 430,Home & Kitchen,28.99,19.39
+P0091,Orbit Lamp 264,Home & Kitchen,37.99,25.77
+P0092,Vista Knife Set 923,Home & Kitchen,215.99,140.97
+P0093,Orbit Coffee Maker 963,Home & Kitchen,37.99,23.88
+P0094,Zenith Coffee Maker 578,Home & Kitchen,143.99,90.91
+P0095,Apex Knife Set 131,Home & Kitchen,33.99,21.17
+P0096,Apex Bedding 218,Home & Kitchen,168.99,107.14
+P0097,Terra Knife Set 622,Home & Kitchen,19.99,11.77
+P0098,Nova Bedding 962,Home & Kitchen,21.99,13.37
+P0099,Orbit Knife Set 995,Home & Kitchen,79.99,47.0
+P0100,Zenith Knife Set 630,Home & Kitchen,30.99,21.9
+P0101,Apex Cookware Set 216,Home & Kitchen,84.99,54.38
+P0102,Terra Knife Set 569,Home & Kitchen,55.99,34.32
+P0103,Terra Lamp 311,Home & Kitchen,141.99,83.72
+P0104,Terra Knife Set 205,Home & Kitchen,20.99,14.86
+P0105,Vista Lamp 928,Home & Kitchen,94.99,59.47
+P0106,Zenith Knife Set 907,Home & Kitchen,37.99,23.3
+P0107,Zenith Lamp 578,Home & Kitchen,31.99,22.33
+P0108,Luma Blender 941,Home & Kitchen,22.99,15.14
+P0109,Apex Knife Set 258,Home & Kitchen,43.99,25.91
+P0110,Terra Coffee Maker 530,Home & Kitchen,134.99,90.08
+P0111,Nova Knife Set 860,Home & Kitchen,240.99,169.52
+P0112,Pulse Bedding 672,Home & Kitchen,163.99,115.27
+P0113,Nova Knife Set 589,Home & Kitchen,77.99,51.19
+P0114,Nova Lamp 365,Home & Kitchen,152.99,100.33
+P0115,Nova Cookware Set 563,Home & Kitchen,51.99,31.75
+P0116,Pulse Lamp 996,Home & Kitchen,19.99,11.93
+P0117,Zenith Bedding 138,Home & Kitchen,32.99,19.14
+P0118,Nova Blender 684,Home & Kitchen,97.99,69.31
+P0119,Zenith Blender 321,Home & Kitchen,186.99,130.89
+P0120,Apex Knife Set 278,Home & Kitchen,132.99,78.8
+P0121,Pulse Jacket 104,Apparel,53.99,31.84
+P0122,Nova Dress 820,Apparel,47.99,26.5
+P0123,Apex Jacket 701,Apparel,84.99,35.22
+P0124,Zenith Dress 727,Apparel,70.99,30.7
+P0125,Orbit Sneakers 202,Apparel,12.99,6.48
+P0126,Nova Jeans 666,Apparel,66.99,28.79
+P0127,Zenith T-Shirt 147,Apparel,16.99,9.27
+P0128,Apex Jeans 981,Apparel,61.99,29.61
+P0129,Nova Jeans 103,Apparel,13.99,5.92
+P0130,Nova Hoodie 255,Apparel,60.99,35.48
+P0131,Orbit Dress 632,Apparel,17.99,7.97
+P0132,Orbit Dress 614,Apparel,51.99,29.68
+P0133,Terra Sneakers 476,Apparel,105.99,48.76
+P0134,Terra Hoodie 945,Apparel,53.99,30.79
+P0135,Vista Hoodie 921,Apparel,38.99,22.46
+P0136,Orbit Dress 349,Apparel,15.99,8.62
+P0137,Zenith Jeans 460,Apparel,31.99,16.56
+P0138,Vista Dress 295,Apparel,30.99,14.95
+P0139,Pulse Jacket 368,Apparel,24.99,12.62
+P0140,Orbit Jacket 614,Apparel,19.99,9.73
+P0141,Terra Jeans 627,Apparel,59.99,32.2
+P0142,Vista Hoodie 593,Apparel,73.99,38.01
+P0143,Terra Hoodie 964,Apparel,50.99,23.08
+P0144,Terra Jacket 928,Apparel,91.99,45.93
+P0145,Luma T-Shirt 321,Apparel,39.99,17.3
+P0146,Luma Jacket 204,Apparel,36.99,21.66
+P0147,Zenith Jacket 169,Apparel,82.99,44.25
+P0148,Luma T-Shirt 382,Apparel,17.99,8.12
+P0149,Orbit T-Shirt 734,Apparel,11.99,6.3
+P0150,Zenith Sneakers 640,Apparel,16.99,9.79
+P0151,Terra Dress 168,Apparel,27.99,12.47
+P0152,Pulse T-Shirt 718,Apparel,24.99,11.47
+P0153,Pulse Jeans 399,Apparel,28.99,16.18
+P0154,Nova Hoodie 247,Apparel,39.99,22.67
+P0155,Pulse Dress 961,Apparel,81.99,35.43
+P0156,Terra Jeans 227,Apparel,116.99,59.71
+P0157,Luma Jacket 851,Apparel,29.99,15.39
+P0158,Zenith Dress 235,Apparel,34.99,19.73
+P0159,Pulse Jacket 668,Apparel,96.99,52.53
+P0160,Apex Dress 627,Apparel,36.99,18.54
+P0161,Luma Sneakers 855,Apparel,14.99,7.08
+P0162,Zenith Hoodie 702,Apparel,52.99,23.71
+P0163,Vista Hoodie 768,Apparel,13.99,7.45
+P0164,Terra Sneakers 533,Apparel,83.99,37.48
+P0165,Luma Jeans 487,Apparel,84.99,41.01
+P0166,Pulse Hoodie 406,Apparel,84.99,42.52
+P0167,Terra Jacket 119,Apparel,40.99,17.07
+P0168,Orbit Hoodie 259,Apparel,50.99,27.14
+P0169,Luma Jacket 646,Apparel,18.99,9.69
+P0170,Pulse Jacket 638,Apparel,23.99,14.36
+P0171,Apex T-Shirt 572,Apparel,22.99,9.28
+P0172,Vista Dress 529,Apparel,49.99,22.38
+P0173,Terra T-Shirt 355,Apparel,95.99,42.58
+P0174,Pulse Jacket 202,Apparel,87.99,39.9
+P0175,Vista Jeans 964,Apparel,32.99,13.4
+P0176,Vista Jacket 359,Apparel,115.99,52.57
+P0177,Vista Hoodie 104,Apparel,66.99,39.65
+P0178,Nova Dress 540,Apparel,71.99,29.0
+P0179,Luma Dress 317,Apparel,34.99,15.44
+P0180,Orbit Sneakers 599,Apparel,14.99,6.59
+P0181,Orbit T-Shirt 314,Apparel,100.99,53.07
+P0182,Nova Hoodie 198,Apparel,12.99,6.04
+P0183,Vista T-Shirt 107,Apparel,61.99,28.03
+P0184,Zenith Hoodie 144,Apparel,75.99,42.03
+P0185,Apex Dress 498,Apparel,49.99,24.85
+P0186,Nova Jeans 126,Apparel,56.99,29.62
+P0187,Terra T-Shirt 328,Apparel,93.99,40.36
+P0188,Apex T-Shirt 867,Apparel,26.99,14.58
+P0189,Orbit Hoodie 202,Apparel,46.99,19.86
+P0190,Luma T-Shirt 176,Apparel,17.99,9.56
+P0191,Orbit T-Shirt 579,Apparel,62.99,34.06
+P0192,Pulse Jeans 223,Apparel,30.99,15.03
+P0193,Zenith Perfume 760,Beauty,79.99,34.06
+P0194,Terra Moisturizer 546,Beauty,65.99,32.19
+P0195,Nova Serum 415,Beauty,18.99,9.79
+P0196,Apex Face Mask 670,Beauty,22.99,10.06
+P0197,Pulse Face Mask 965,Beauty,20.99,8.19
+P0198,Zenith Lipstick 906,Beauty,14.99,6.95
+P0199,Pulse Face Mask 375,Beauty,16.99,5.81
+P0200,Terra Shampoo 687,Beauty,30.99,13.89
+P0201,Luma Moisturizer 259,Beauty,13.99,4.34
+P0202,Apex Serum 604,Beauty,14.99,4.95
+P0203,Vista Lipstick 874,Beauty,48.99,13.78
+P0204,Orbit Moisturizer 832,Beauty,37.99,11.53
+P0205,Orbit Moisturizer 253,Beauty,48.99,24.28
+P0206,Terra Moisturizer 958,Beauty,35.99,14.29
+P0207,Apex Serum 943,Beauty,21.99,10.89
+P0208,Pulse Serum 321,Beauty,8.99,4.53
+P0209,Luma Shampoo 810,Beauty,22.99,11.67
+P0210,Luma Shampoo 445,Beauty,9.99,5.05
+P0211,Orbit Moisturizer 978,Beauty,39.99,17.01
+P0212,Luma Serum 101,Beauty,20.99,10.35
+P0213,Apex Serum 199,Beauty,57.99,23.34
+P0214,Terra Lipstick 487,Beauty,16.99,5.65
+P0215,Terra Moisturizer 305,Beauty,55.99,25.86
+P0216,Luma Face Mask 714,Beauty,23.99,11.16
+P0217,Apex Face Mask 533,Beauty,16.99,6.96
+P0218,Nova Moisturizer 235,Beauty,40.99,20.85
+P0219,Nova Face Mask 180,Beauty,10.99,5.22
+P0220,Nova Serum 199,Beauty,8.99,3.34
+P0221,Nova Shampoo 307,Beauty,13.99,4.42
+P0222,Terra Moisturizer 867,Beauty,7.99,2.97
+P0223,Pulse Perfume 994,Beauty,11.99,5.5
+P0224,Zenith Shampoo 508,Beauty,65.99,24.76
+P0225,Nova Lipstick 759,Beauty,76.99,34.15
+P0226,Zenith Serum 640,Beauty,49.99,23.4
+P0227,Vista Moisturizer 840,Beauty,20.99,10.76
+P0228,Nova Lipstick 117,Beauty,17.99,8.64
+P0229,Zenith Perfume 371,Beauty,41.99,18.64
+P0230,Vista Serum 633,Beauty,61.99,30.36
+P0231,Vista Perfume 154,Beauty,10.99,4.38
+P0232,Apex Moisturizer 103,Beauty,77.99,40.24
+P0233,Terra Shampoo 448,Beauty,78.99,24.06
+P0234,Apex Lipstick 582,Beauty,60.99,22.61
+P0235,Vista Serum 502,Beauty,14.99,6.73
+P0236,Terra Face Mask 851,Beauty,36.99,19.07
+P0237,Apex Moisturizer 861,Beauty,31.99,14.69
+P0238,Zenith Moisturizer 597,Beauty,32.99,14.02
+P0239,Terra Perfume 786,Beauty,37.99,12.84
+P0240,Terra Serum 476,Beauty,76.99,30.53
+P0241,Nova Bike Helmet 422,Sports & Outdoors,15.99,10.14
+P0242,Terra Bike Helmet 899,Sports & Outdoors,19.99,12.71
+P0243,Orbit Yoga Mat 423,Sports & Outdoors,115.99,77.58
+P0244,Pulse Water Bottle 872,Sports & Outdoors,26.99,15.04
+P0245,Luma Dumbbells 891,Sports & Outdoors,27.99,15.74
+P0246,Vista Dumbbells 564,Sports & Outdoors,46.99,27.41
+P0247,Terra Bike Helmet 953,Sports & Outdoors,133.99,91.13
+P0248,Terra Bike Helmet 878,Sports & Outdoors,224.99,129.3
+P0249,Nova Tent 487,Sports & Outdoors,19.99,13.84
+P0250,Vista Water Bottle 439,Sports & Outdoors,281.99,165.43
+P0251,Vista Dumbbells 663,Sports & Outdoors,213.99,129.14
+P0252,Luma Dumbbells 467,Sports & Outdoors,85.99,51.98
+P0253,Terra Dumbbells 160,Sports & Outdoors,246.99,157.74
+P0254,Apex Bike Helmet 217,Sports & Outdoors,48.99,32.88
+P0255,Nova Dumbbells 121,Sports & Outdoors,116.99,77.09
+P0256,Pulse Dumbbells 777,Sports & Outdoors,19.99,11.24
+P0257,Orbit Tent 977,Sports & Outdoors,34.99,21.58
+P0258,Apex Dumbbells 333,Sports & Outdoors,60.99,42.03
+P0259,Nova Water Bottle 320,Sports & Outdoors,62.99,39.1
+P0260,Vista Tent 326,Sports & Outdoors,20.99,13.67
+P0261,Luma Water Bottle 794,Sports & Outdoors,147.99,80.85
+P0262,Pulse Dumbbells 956,Sports & Outdoors,284.99,195.24
+P0263,Pulse Tent 299,Sports & Outdoors,22.99,15.66
+P0264,Terra Bike Helmet 654,Sports & Outdoors,188.99,115.96
+P0265,Nova Tent 508,Sports & Outdoors,24.99,14.16
+P0266,Apex Backpack 760,Sports & Outdoors,85.99,55.98
+P0267,Zenith Dumbbells 199,Sports & Outdoors,45.99,26.61
+P0268,Zenith Backpack 946,Sports & Outdoors,27.99,18.97
+P0269,Vista Yoga Mat 446,Sports & Outdoors,219.99,124.81
+P0270,Luma Backpack 471,Sports & Outdoors,25.99,16.31
+P0271,Pulse Bike Helmet 220,Sports & Outdoors,30.99,17.45
+P0272,Zenith Backpack 577,Sports & Outdoors,40.99,26.98
+P0273,Luma Yoga Mat 132,Sports & Outdoors,30.99,17.39
+P0274,Pulse Tent 565,Sports & Outdoors,153.99,95.69
+P0275,Orbit Backpack 842,Sports & Outdoors,72.99,49.34
+P0276,Orbit Tent 956,Sports & Outdoors,21.99,13.69
+P0277,Apex Novel 434,Books,40.99,31.94
+P0278,Terra Comic 127,Books,9.99,7.87
+P0279,Nova Cookbook 922,Books,37.99,28.63
+P0280,Terra Guidebook 578,Books,12.99,10.15
+P0281,Apex Workbook 834,Books,43.99,33.13
+P0282,Vista Workbook 927,Books,7.99,6.12
+P0283,Pulse Biography 151,Books,6.99,5.16
+P0284,Zenith Guidebook 813,Books,26.99,21.02
+P0285,Terra Biography 358,Books,38.99,31.18
+P0286,Vista Cookbook 352,Books,43.99,34.92
+P0287,Zenith Novel 490,Books,14.99,11.04
+P0288,Apex Novel 928,Books,12.99,9.98
+P0289,Vista Biography 372,Books,25.99,19.23
+P0290,Vista Guidebook 954,Books,15.99,12.24
+P0291,Nova Workbook 986,Books,8.99,7.16
+P0292,Zenith Cookbook 902,Books,14.99,10.87
+P0293,Orbit Guidebook 775,Books,43.99,33.86
+P0294,Vista Workbook 429,Books,39.99,29.04
+P0295,Pulse Guidebook 234,Books,13.99,10.48
+P0296,Vista Cookbook 476,Books,36.99,27.2
+P0297,Vista Biography 517,Books,11.99,9.44
+P0298,Orbit Cookbook 700,Books,6.99,5.13
+P0299,Luma Novel 897,Books,22.99,17.94
+P0300,Luma Comic 873,Books,28.99,22.48

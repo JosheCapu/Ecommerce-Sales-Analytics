@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>E-Commerce Sales Dashboard</title>
+<style>
+  :root { --bg:#f8fafc; --card:#fff; --ink:#0f172a; --muted:#64748b; --line:#e2e8f0; --blue:#2563eb; --amber:#f59e0b; --up:#16a34a; --down:#dc2626; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#0b1120; --card:#111827; --ink:#e5e7eb; --muted:#94a3b8; --line:#1f2937; --blue:#60a5fa; --amber:#fbbf24; --up:#4ade80; --down:#f87171; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:14px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width:1200px; margin:0 auto; padding:24px 16px 48px; }
+  h1 { font-size:24px; margin:0 0 4px; }
+  header p { color:var(--muted); margin:0 0 20px; }
+  header a { color:var(--blue); }
+  .kpis { display:grid; grid-template-columns:repeat(auto-fit, minmax(140px, 1fr)); gap:12px; margin-bottom:16px; }
+  .kpi, .card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:16px; }
+  .kpi .label { color:var(--muted); font-size:12px; font-weight:600; text-transform:uppercase; letter-spacing:.04em; }
+  .kpi .value { font-size:26px; font-weight:700; margin:4px 0; font-variant-numeric:tabular-nums; }
+  .kpi .delta { font-size:12px; font-weight:600; }
+  .up { color:var(--up); } .down { color:var(--down); }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(min(100%, 480px), 1fr)); gap:16px; }
+  .wide { grid-column:1 / -1; }
+  .card h2 { font-size:15px; margin:0 0 2px; }
+  .card p { color:var(--muted); margin:0 0 12px; font-size:13px; }
+  .chart { position:relative; height:280px; }
+  .wide .chart { height:320px; }
+  .scroll { overflow-x:auto; }
+  table { border-collapse:collapse; font-size:12px; font-variant-numeric:tabular-nums; width:100%; }
+  th, td { padding:5px 6px; text-align:center; white-space:nowrap; }
+  th { color:var(--muted); font-weight:600; }
+  td:first-child, th:first-child { text-align:left; }
+  footer { color:var(--muted); font-size:12px; margin-top:24px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>E-Commerce Sales &amp; Customer Analytics</h1>
+    <p>Jan 2023 – Dec 2024 · Completed orders, net of returns · <a href="https://github.com/YOUR-USERNAME/ecommerce-sales-analytics">Full analysis &amp; code on GitHub</a></p>
+  </header>
+
+  <section class="kpis" id="kpis"></section>
+
+  <section class="grid">
+    <div class="card wide"><h2>Monthly net sales</h2><p>Stacked by new vs returning customers. Holiday peaks each Nov–Dec; returning customers now drive about half of monthly sales.</p><div class="chart"><canvas id="monthly"></canvas></div></div>
+    <div class="card"><h2>Category performance</h2><p>Net sales (bars) vs gross margin (line). Electronics leads sales but has the thinnest margin.</p><div class="chart"><canvas id="category"></canvas></div></div>
+    <div class="card"><h2>Acquisition channel quality</h2><p>Avg net sales in a customer's first 12 months (bars) and repeat-purchase rate (line).</p><div class="chart"><canvas id="channel"></canvas></div></div>
+    <div class="card"><h2>RFM customer segments</h2><p>Share of customers vs share of net sales.</p><div class="chart"><canvas id="segments"></canvas></div></div>
+    <div class="card"><h2>Discount impact</h2><p>Deeper discounts add units per order but erode gross margin.</p><div class="chart"><canvas id="discount"></canvas></div></div>
+    <div class="card wide"><h2>Cohort retention</h2><p>% of customers from each first-order month who ordered again N months later.</p><div class="scroll"><table id="cohort"></table></div></div>
+  </section>
+
+  <footer>Synthetic dataset generated for portfolio purposes. Built with Python (pandas), SQL (SQLite) and Chart.js.</footer>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script src="data.js"></script>
+<script>
+const D = window.DASHBOARD_DATA;
+const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const [BLUE, AMBER, MUTED, LINE] = ["--blue", "--amber", "--muted", "--line"].map(css);
+const money = v => "$" + Math.round(v).toLocaleString("en-US");
+const kmoney = v => "$" + (v / 1000).toFixed(0) + "K";
+const pct = (v, d = 1) => (v * 100).toFixed(d) + "%";
+
+Chart.defaults.color = MUTED;
+Chart.defaults.borderColor = LINE;
+Chart.defaults.font.family = "system-ui, -apple-system, 'Segoe UI', sans-serif";
+Chart.defaults.maintainAspectRatio = false;
+Chart.defaults.plugins.legend.labels.boxWidth = 12;
+
+// KPI tiles
+const tiles = [["Net Sales", money], ["Orders", v => Math.round(v).toLocaleString("en-US")], ["Customers", v => Math.round(v).toLocaleString("en-US")],
+  ["Avg Order Value", v => "$" + v.toFixed(2)], ["Gross Margin %", pct], ["Repeat Customer Rate", pct], ["Return Rate (% of sales)", pct]];
+document.getElementById("kpis").innerHTML = tiles.map(([k, f]) => {
+  const { all, yoy } = D.kpi[k];
+  const good = k.startsWith("Return") ? yoy <= 0 : yoy >= 0;
+  return `<div class="kpi"><div class="label">${k.replace(" (% of sales)", "")}</div><div class="value">${f(all)}</div>
+    <div class="delta ${good ? "up" : "down"}">${yoy >= 0 ? "▲" : "▼"} ${pct(Math.abs(yoy))} 2024 vs 2023</div></div>`;
+}).join("");
+
+const axisPct = { ticks: { callback: v => pct(v, 0) }, grid: { display: false } };
+
+new Chart(monthly, { type: "bar", data: { labels: D.monthly.labels, datasets: [
+  { label: "New customers", data: D.monthly.new, backgroundColor: BLUE },
+  { label: "Returning customers", data: D.monthly.returning, backgroundColor: AMBER }] },
+  options: { scales: { x: { stacked: true, grid: { display: false } }, y: { stacked: true, ticks: { callback: kmoney } } },
+    plugins: { tooltip: { callbacks: { label: c => `${c.dataset.label}: ${money(c.raw)}` } } } } });
+
+new Chart(category, { data: { labels: D.category.labels, datasets: [
+  { type: "bar", label: "Net sales", data: D.category.sales, backgroundColor: BLUE, yAxisID: "y" },
+  { type: "line", label: "Gross margin", data: D.category.margin, borderColor: AMBER, backgroundColor: AMBER, yAxisID: "y1" }] },
+  options: { scales: { x: { grid: { display: false } }, y: { ticks: { callback: kmoney } }, y1: { position: "right", ...axisPct, min: 0 } },
+    plugins: { tooltip: { callbacks: { label: c => c.dataset.yAxisID === "y" ? `Net sales: ${money(c.raw)}` : `Margin: ${pct(c.raw)}` } } } } });
+
+new Chart(channel, { data: { labels: D.channel.labels, datasets: [
+  { type: "bar", label: "12-month value", data: D.channel.ltv, backgroundColor: BLUE, yAxisID: "y" },
+  { type: "line", label: "Repeat rate", data: D.channel.repeat, borderColor: AMBER, backgroundColor: AMBER, yAxisID: "y1" }] },
+  options: { scales: { x: { grid: { display: false } }, y: { ticks: { callback: v => "$" + v } }, y1: { position: "right", ...axisPct, min: 0 } },
+    plugins: { tooltip: { callbacks: { label: c => c.dataset.yAxisID === "y" ? `12-month value: ${money(c.raw)}` : `Repeat rate: ${pct(c.raw)}` } } } } });
+
+new Chart(segments, { type: "bar", data: { labels: D.segments.labels, datasets: [
+  { label: "% of customers", data: D.segments.customers, backgroundColor: MUTED },
+  { label: "% of net sales", data: D.segments.sales, backgroundColor: BLUE }] },
+  options: { scales: { x: { grid: { display: false } }, y: { ticks: { callback: v => pct(v, 0) } } },
+    plugins: { tooltip: { callbacks: { label: c => `${c.dataset.label}: ${pct(c.raw)}` } } } } });
+
+new Chart(discount, { data: { labels: D.discount.labels, datasets: [
+  { type: "bar", label: "Units per order", data: D.discount.units, backgroundColor: BLUE, yAxisID: "y" },
+  { type: "line", label: "Gross margin", data: D.discount.margin, borderColor: AMBER, backgroundColor: AMBER, yAxisID: "y1" }] },
+  options: { scales: { x: { grid: { display: false } }, y: { beginAtZero: true }, y1: { position: "right", ...axisPct, min: 0 } } } });
+
+// Cohort heatmap table
+const R = D.retention;
+const head = `<tr><th>Cohort</th><th>Size</th>${Array.from({ length: 12 }, (_, i) => `<th>M${i + 1}</th>`).join("")}</tr>`;
+const body = R.cohorts.map((c, i) => `<tr><td>${c}</td><td>${R.size[i]}</td>${R.rows[i].map(v => v == null ? "<td></td>" :
+  `<td style="background:color-mix(in srgb, ${BLUE} ${Math.min(v / 0.2, 1) * 85}%, transparent);color:${v > 0.12 ? "#fff" : "inherit"}">${pct(v, 0)}</td>`).join("")}</tr>`).join("");
+document.getElementById("cohort").innerHTML = head + body;
+</script>
+</body>
+</html>
