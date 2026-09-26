@@ -6,7 +6,7 @@ End-to-end analysis of two years (Jan 2023 – Dec 2024) of online-store transac
 
 | Deliverable | Where |
 |---|---|
-| Interactive dashboard | [`docs/index.html`](docs/index.html) → live at `https://YOUR-USERNAME.github.io/ecommerce-sales-analytics/` |
+| Interactive dashboard | [`docs/index.html`](docs/index.html) → live at `https://github.com/JosheCapu/Ecommerce-Sales-Analytics` |
 | Excel workbook (dashboard + 11 analysis sheets) | [`outputs/ecommerce_analytics.xlsx`](outputs/ecommerce_analytics.xlsx) |
 | Analysis pipeline | [`analysis.py`](analysis.py) |
 | SQL queries | [`sql/analysis_queries.sql`](sql/analysis_queries.sql) → results in [`outputs/sql/`](outputs/sql) |
